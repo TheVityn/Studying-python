@@ -1,4 +1,5 @@
 import pygame
+from Pillow import image
 
 def setscreen(window):
     global screen
@@ -11,5 +12,12 @@ class Sprite:
         self.y = posy
         self.bitmap = pygame.image.load(filename)
 
+    def moving(self, x, y):
+        self.x += x
+        self.y += y
+
 def render(self):
     screen.blit(self.bitmap, (self.x, self.y))
+
+def resize(self, size):
+    self.bitmap = pygame
