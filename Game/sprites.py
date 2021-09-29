@@ -41,6 +41,7 @@ class Sprite:
         self.bitmap = pygame.transform.scale(self.bitmap, (self.size_x, self.size_y))
 
 
+
 def render(self, camera):
     if camera == 'NONE':
         screen.blit(self.bitmap, (self.x, self.y))
@@ -49,5 +50,29 @@ def render(self, camera):
         rend_y = self.y - camera.y + screen_h - self.size_y * 0.5
         screen.blit(self.bitmap, (rend_x, rend_y))
 
+def touch(self1, self2):
+    try:
+        if (not self1.invisible) and (not self2.invisible):
+            x1 = self1.x
+            x2 = self2.x
+            y1 = self1.y
+            y2 = self2.y
+            w1 = self1.hitbox_w
+            w2 = self2.hitbox_w
+            h1 = self1.hitbox_h
+            h2 = self1.hitbox_h
+            x_hitb1 = self1.hitbox_x
+            x_hitb2 = self2.hitbox_x
+            y_hitb1 = self1.hitbox_y
+            y_hitb2 = self2.hitbox_y
+            if ()
 
+
+
+        else:
+            return 0
+    except:
+        return 0
+
+def is_contact():
 
